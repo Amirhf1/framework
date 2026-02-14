@@ -2754,6 +2754,10 @@ trait ValidatesAttributes
     /**
      * Get the size of an attribute.
      *
+     * For files, the size is returned in kilobytes (1024 bytes). For numeric values,
+     * the value itself is returned. For strings, the length in characters is returned.
+     * For arrays, the number of elements is returned.
+     *
      * @param  string  $attribute
      * @param  mixed  $value
      * @return int|string
